@@ -11,8 +11,8 @@
     <Folder Include="DATA\" />
     <Folder Include="Resources\" />
     <Folder Include="UI\Consulta\" />
-    <Folder Include="UI\Reporte\" />
     <Folder Include="UI\Registro\" />
+    <Folder Include="UI\Reporte\" />
   </ItemGroup>
 
   <ItemGroup>

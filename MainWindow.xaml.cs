@@ -1,4 +1,5 @@
-﻿using System;
+﻿using P1_AP1_Danilo_20190266.UI.Registro;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,16 @@ namespace P1_AP1_Danilo_20190266
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Aportes_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Consultar_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
