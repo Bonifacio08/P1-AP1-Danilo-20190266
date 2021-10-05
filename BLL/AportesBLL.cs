@@ -54,7 +54,7 @@ namespace P1_AP1_Danilo_20190266.BLL
             return paso;
         }
 
-        private static bool Guardar(Aportes aportes)
+        public static bool Guardar(Aportes aportes)
         {
             if (!Existe(aportes.AporteID))
                 return Insertar(aportes);
@@ -62,7 +62,7 @@ namespace P1_AP1_Danilo_20190266.BLL
                 return Modificar(aportes);
         }
 
-        private static bool Modificar(Aportes aportes)
+        public static bool Modificar(Aportes aportes)
         {
             bool paso = false;
             Contexto contexto = new Contexto();
@@ -82,7 +82,7 @@ namespace P1_AP1_Danilo_20190266.BLL
             return paso;
         }
 
-        private static bool Eliminar(int id)
+        public static bool Eliminar(int id)
         {
             bool paso = false;
             Contexto contexto = new Contexto();
@@ -106,7 +106,7 @@ namespace P1_AP1_Danilo_20190266.BLL
             return paso;
         }
 
-        private static Aportes Buscar(int id)
+        public static Aportes Buscar(int id)
         {
             Contexto contexto = new Contexto();
             Aportes aportes;

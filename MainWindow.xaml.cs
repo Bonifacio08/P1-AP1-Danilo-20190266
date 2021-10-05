@@ -25,10 +25,11 @@ namespace P1_AP1_Danilo_20190266
         {
             InitializeComponent();
         }
+        VentanaRegistro VentanaRegistro = new VentanaRegistro();
 
         private void Aportes_Click(object sender, RoutedEventArgs e)
         {
-
+            VentanaRegistro.Show();
         }
 
         private void Consultar_Click(object sender, RoutedEventArgs e)
