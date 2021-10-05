@@ -1,0 +1,35 @@
+﻿<Window x:Class="P1_AP1_Danilo_20190266.UI.Consulta.VentanaConsulta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P1_AP1_Danilo_20190266.UI.Consulta"
+        mc:Ignorable="d"
+        Title="Consulta" Height="556" Width="618">
+    <Grid Background="#FF57D8DE" >
+        <Label Content="Desde" HorizontalAlignment="Left" Margin="38,44,0,0" VerticalAlignment="Top"/>
+        <Label Content="Hasta" HorizontalAlignment="Left" Margin="126,44,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.301,1.388"/>
+        <DatePicker x:Name="FechaInicio" HorizontalAlignment="Left" Margin="28,77,0,0" VerticalAlignment="Top" Width="93"/>
+        <DatePicker  x:Name="FechaFinal" HorizontalAlignment="Left" Margin="126,77,0,0" VerticalAlignment="Top" Width="93"/>
+        <ComboBox x:Name="Filtro" HorizontalAlignment="Left" Margin="26,136,0,0" VerticalAlignment="Top" Width="120" >
+            <ComboBoxItem Content="Persona"/>
+            <ComboBoxItem Content="Concepto"/>
+        </ComboBox>
+        <Button  HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click" Height="24" Width="22" Margin="226,77,0,0">
+            <StackPanel Orientation="Vertical">
+                <Image Source="/Resources/lupa (1).png" Height="12" Width="12"/>
+            </StackPanel>
+        </Button>
+        <StackPanel Orientation="Vertical" Margin="0,192,0,112" HorizontalAlignment="Left" Width="557">
+            <DataGrid x:Name="Tabla" Width="510" Height="223">
+
+            </DataGrid>
+        </StackPanel>
+        <Label Content="Conteo" HorizontalAlignment="Left" Margin="17,450,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextConteo" HorizontalAlignment="Left" Height="20" Margin="66,454,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46"/>
+        <Label Content="Total" HorizontalAlignment="Left" Margin="217,450,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextTotal" HorizontalAlignment="Left" Height="20" Margin="271,454,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46"/>
+        <TextBox x:Name="TextBuscar" HorizontalAlignment="Left" Margin="211,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

@@ -1,4 +1,5 @@
-﻿using P1_AP1_Danilo_20190266.UI.Registro;
+﻿using P1_AP1_Danilo_20190266.UI.Consulta;
+using P1_AP1_Danilo_20190266.UI.Registro;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,16 +26,18 @@ namespace P1_AP1_Danilo_20190266
         {
             InitializeComponent();
         }
-        VentanaRegistro VentanaRegistro = new VentanaRegistro();
-
+        //VentanaRegistro VentanaRegistro = new VentanaRegistro();
+        //VentanaConsulta VentanaConsulta = new VentanaConsulta();
         private void Aportes_Click(object sender, RoutedEventArgs e)
         {
+            VentanaRegistro VentanaRegistro = new VentanaRegistro();
             VentanaRegistro.Show();
         }
 
         private void Consultar_Click(object sender, RoutedEventArgs e)
         {
-
+            VentanaConsulta VentanaConsulta = new VentanaConsulta();
+            VentanaConsulta.Show();
         }
     }
 }

@@ -14,7 +14,7 @@
                 </MenuItem>
 
                 <MenuItem Header="Consulta">
-                    <MenuItem x:Name="Consultar" Click="Consultar_Click"></MenuItem>
+                    <MenuItem Header="Contultar" x:Name="Consultar" Click="Consultar_Click"></MenuItem>
                 </MenuItem>
             </Menu>
         </StackPanel>
